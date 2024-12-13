@@ -12,43 +12,6 @@ from rdkit.Chem.Draw.MolDrawing import MolDrawing, DrawingOptions
 from rdkit.Chem.Draw.MolDrawing import Font
 
 
-import numpy as np
-import torch
-import matplotlib.pyplot as plt
-
-import pandas as pd
-import seaborn as sns
-
-import networkx as nx
-
-import torch.nn.functional as F
-
-# import torch_geometric.data into environment
-from torch_geometric.data import Data
-from torch_geometric.datasets import MoleculeNet
-from torch_geometric import nn
-import torch_geometric.transforms as T
-from torch_geometric.nn import GATv2Conv
-
-from torch_geometric.nn.pool import global_mean_pool
-
-from torch.utils.data import random_split
-
-from torch_geometric.loader import DataLoader
-
-from utils import draw_smiles, my_draw_networkx_edge_labels
-
-from pysmiles import read_smiles #Unused
-
-from tqdm import tqdm
-
-from time import time
-
-from scipy.stats import linregress
-
-#Random graphs
-import random
-
 class MPLCanvas(CanvasBase):
     def __init__(self, fig, axes, font):
         self.size = (200, 200)
