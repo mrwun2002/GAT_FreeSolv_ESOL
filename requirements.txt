@@ -1,8 +1,11 @@
-matplotlib==3.9.3
+matplotlib==3.9.4
 networkx==3.2.1
 numpy==2.2.0
+pandas==2.2.3
 pysmiles==1.1.2
 rdkit==2024.3.6
+scipy==1.14.1
+seaborn==0.13.2
 torch==2.4.1
 torch_geometric==2.6.1
 tqdm==4.66.5
